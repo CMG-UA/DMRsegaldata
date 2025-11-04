@@ -36,10 +36,10 @@ metadata <- data.frame(
   ),
 
   Location_Prefix = c(
-    "https://zenodo.org",
-    "https://zenodo.org",
-    "https://zenodo.org",
-    "https://zenodo.org"
+    "https://zenodo.org/",
+    "https://zenodo.org/",
+    "https://zenodo.org/",
+    "https://zenodo.org/"
   ),
 
   RDataPath = c(
