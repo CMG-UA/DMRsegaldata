@@ -20,7 +20,7 @@ metadata <- data.frame(
   ),
   
   ## BiocVersion: Bioconductor version when resource was added
-  BiocVersion = c("3.20", "3.20", "3.20", "3.20"),
+  BiocVersion = c("3.22", "3.22", "3.22", "3.22"),
   
   ## Genome: Genome build
   Genome = c("hg19", "hg19", "hg19", "hg19"),
