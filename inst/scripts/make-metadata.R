@@ -20,7 +20,7 @@ metadata <- data.frame(
   ),
   
   ## BiocVersion: Bioconductor version when resource was added
-  BiocVersion = c("3.22", "3.22", "3.22", "3.22"),
+  BiocVersion = c("3.23", "3.23", "3.23", "3.23"),
   
   ## Genome: Genome build
   Genome = c("hg19", "hg19", "hg19", "hg19"),
@@ -35,11 +35,18 @@ metadata <- data.frame(
     "https://zenodo.org/records/17475298/files/array_type.rda"
   ),
 
+  Location_Prefix = c(
+    "https://zenodo.org",
+    "https://zenodo.org",
+    "https://zenodo.org",
+    "https://zenodo.org"
+  ),
+
   RDataPath = c(
-    "DMRsegaldata/beta.rda",
-    "DMRsegaldata/pheno.rda",
-    "DMRsegaldata/dmps.rda",
-    "DMRsegaldata/array_type.rda"
+    "records/17475298/files/beta.rda",
+    "records/17475298/files/pheno.rda",
+    "records/17475298/files/dmps.rda",
+    "records/17475298/files/array_type.rda"
   ),
   
   ## SourceVersion: Version or date of source data
