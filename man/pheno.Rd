@@ -28,7 +28,7 @@ eh <- ExperimentHub()
 
 # Query and load
 myfiles <- query(eh, "DMRsegaldata")
-pheno <- myfiles[["EH####"]]  # Replace #### with actual EH ID
+pheno <- myfiles[["EH10276"]]
 
 # Or use helper function
 pheno <- ExperimentHub::loadResource(eh, "DMRsegaldata", "pheno.rda")

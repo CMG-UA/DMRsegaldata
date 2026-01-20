@@ -33,7 +33,7 @@ eh <- ExperimentHub()
 
 # Query and load
 myfiles <- query(eh, "DMRsegaldata")
-beta <- myfiles[["EH####"]]  # Replace #### with actual EH ID
+beta <- myfiles[["EH10275"]]
 
 # Or use helper function
 beta <- ExperimentHub::loadResource(eh, "DMRsegaldata", "beta.rda")

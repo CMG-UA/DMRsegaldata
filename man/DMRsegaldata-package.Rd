@@ -59,8 +59,8 @@ myfiles <- query(eh, "DMRsegaldata")
 myfiles
 
 # Load specific resources by name
-beta <- myfiles[["EH####"]]      # Replace with actual EH ID
-pheno <- myfiles[["EH####"]]     # Replace with actual EH ID
+beta <- myfiles[["EH10275"]]
+pheno <- myfiles[["EH10276"]]
 
 # Or use package helper functions
 library(ExperimentHub)

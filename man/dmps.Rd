@@ -41,7 +41,7 @@ eh <- ExperimentHub()
 
 # Query and load
 myfiles <- query(eh, "DMRsegaldata")
-dmps <- myfiles[["EH####"]]  # Replace #### with actual EH ID
+dmps <- myfiles[["EH10277"]]
 
 # Or use helper function
 dmps <- ExperimentHub::loadResource(eh, "DMRsegaldata", "dmps.rda")

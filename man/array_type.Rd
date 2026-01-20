@@ -23,7 +23,7 @@ eh <- ExperimentHub()
 
 # Query and load
 myfiles <- query(eh, "DMRsegaldata")
-array_type <- myfiles[["EH####"]]  # Replace #### with actual EH ID
+array_type <- myfiles[["EH10278"]]
 
 # Or use helper function
 array_type <- ExperimentHub::loadResource(eh, "DMRsegaldata", "array_type.rda")
