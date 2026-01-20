@@ -45,9 +45,6 @@ The methylation data has been preprocessed and quality controlled. The preproces
 The DMP analysis was performed using empirical Bayes moderated t-statistics on M-values (log2 ratio of methylated to unmethylated signal), with adjustment for age and gender covariates.
 }
 \section{Accessing Data}{
-There are two methods to access data from this package:
-
-\subsection{Method 1: Via ExperimentHub (Recommended)}{
 Resources can be accessed through the standard ExperimentHub interface:
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{
