@@ -43,7 +43,7 @@ Example data for the DMRsegal package vignette and examples.
 # Via ExperimentHub
 library(ExperimentHub)
 eh <- ExperimentHub()
-array_type <- ExperimentHub::loadResource(eh, "DMRsegaldata", "array_type.rda")
+array_type <- eh[["EH10278"]]
 }
 
 # Via LazyData

@@ -30,8 +30,6 @@ eh <- ExperimentHub()
 myfiles <- query(eh, "DMRsegaldata")
 pheno <- myfiles[["EH10276"]]
 
-# Or use helper function
-pheno <- ExperimentHub::loadResource(eh, "DMRsegaldata", "pheno.rda")
 }\if{html}{\out{</div>}}
 
 Alternatively, for local/development use:
@@ -48,16 +46,11 @@ Example data for the DMRsegal package vignette and examples.
 # Via ExperimentHub
 library(ExperimentHub)
 eh <- ExperimentHub()
-pheno <- ExperimentHub::loadResource(eh, "DMRsegaldata", "pheno.rda")
-}
-
-# Via LazyData
-data(pheno)
-head(pheno)
-table(pheno$Sample_Group)
+pheno <- eh[["EH10276"]]
 
 # Check sample distribution
 table(pheno$Sample_Group, pheno$Gender)
 summary(pheno$Age)
+}
 }
 \keyword{datasets}

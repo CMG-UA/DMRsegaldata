@@ -30,19 +30,8 @@ This resource can be accessed via ExperimentHub:
 \if{html}{\out{<div class="sourceCode">}}\preformatted{
 library(ExperimentHub)
 eh <- ExperimentHub()
+beta <- eh[["EH10275"]]
 
-# Query and load
-myfiles <- query(eh, "DMRsegaldata")
-beta <- myfiles[["EH10275"]]
-
-# Or use helper function
-beta <- ExperimentHub::loadResource(eh, "DMRsegaldata", "beta.rda")
-}\if{html}{\out{</div>}}
-
-Alternatively, for local/development use:
-
-\if{html}{\out{<div class="sourceCode">}}\preformatted{
-data(beta)
 }\if{html}{\out{</div>}}
 }
 \source{
@@ -50,18 +39,12 @@ Example data for the DMRsegal package vignette and examples.
 }
 \examples{
 \dontrun{
-# Via ExperimentHub
 library(ExperimentHub)
 eh <- ExperimentHub()
-beta <- ExperimentHub::loadResource(eh, "DMRsegaldata", "beta.rda")
-}
-
-# Via LazyData
-data(beta)
-dim(beta)
+beta <- eh[["EH10275"]]
 head(beta[, 1:5])
-
 # Summary statistics
 summary(as.vector(beta[1:100, ]))
+}
 }
 \keyword{datasets}

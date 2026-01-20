@@ -43,8 +43,6 @@ eh <- ExperimentHub()
 myfiles <- query(eh, "DMRsegaldata")
 dmps <- myfiles[["EH10277"]]
 
-# Or use helper function
-dmps <- ExperimentHub::loadResource(eh, "DMRsegaldata", "dmps.rda")
 }\if{html}{\out{</div>}}
 
 Alternatively, for local/development use:
@@ -61,8 +59,7 @@ Derived from the beta matrix and pheno data using limma differential methylation
 # Via ExperimentHub
 library(ExperimentHub)
 eh <- ExperimentHub()
-dmps <- ExperimentHub::loadResource(eh, "DMRsegaldata", "dmps.rda")
-}
+dmps <- eh[["EH10277"]]
 
 # Via LazyData
 data(dmps)
@@ -73,5 +70,6 @@ nrow(dmps)
 summary(dmps$pval_adj)
 sum(dmps$pval_adj < 0.01)  # Very significant DMPs
 sum(dmps$pval_adj < 0.001) # Highly significant DMPs
+}
 }
 \keyword{datasets}

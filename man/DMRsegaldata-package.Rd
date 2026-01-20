@@ -74,21 +74,6 @@ beta <- ExperimentHub::loadResource(eh, "DMRsegaldata", "beta.rda")
 }\if{html}{\out{</div>}}
 }
 
-\subsection{Method 2: Via LazyData (Development)}{
-During package development or when installed locally with data/ directory:
-
-\if{html}{\out{<div class="sourceCode">}}\preformatted{
-data(beta)
-data(pheno)
-data(dmps)
-data(array_type)
-}\if{html}{\out{</div>}}
-}
-
-For detailed examples and workflows, see the package vignette:
-
-\code{browseVignettes("DMRsegaldata")}
-}
 \section{Integration with DMRsegal}{
 This data package is designed to work seamlessly with the DMRsegal package for differential methylation region analysis. The data objects can be directly used as inputs to DMRsegal functions.
 
@@ -122,25 +107,17 @@ Related packages:
 library(ExperimentHub)
 eh <- ExperimentHub()
 
-## Query for DMRsegaldata resources
+
+## List all resources in this package
 myfiles <- query(eh, "DMRsegaldata")
 myfiles
 
-## List all resources in this package
-ExperimentHub::listResources(eh, "DMRsegaldata")
-
 ## Load resources using helper functions
-beta <- ExperimentHub::loadResource(eh, "DMRsegaldata", "beta.rda")
-pheno <- ExperimentHub::loadResource(eh, "DMRsegaldata", "pheno.rda")
-dmps <- ExperimentHub::loadResource(eh, "DMRsegaldata", "dmps.rda")
-array_type <- ExperimentHub::loadResource(eh, "DMRsegaldata", "array_type.rda")
+beta <- eh[["EH10275"]]
+pheno <- eh[["EH10276"]]
+dmps <- eh[["EH10277"]]
+array_type <- eh[["EH10278"]]
 }
-
-## Access via LazyData (for local/development use)
-data(beta)
-data(pheno)
-data(dmps)
-data(array_type)
 
 ## Explore the data
 dim(beta)
