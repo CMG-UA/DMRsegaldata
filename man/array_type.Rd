@@ -40,14 +40,10 @@ Example data for the DMRsegal package vignette and examples.
 }
 \examples{
 \dontrun{
-# Via ExperimentHub
 library(ExperimentHub)
 eh <- ExperimentHub()
 array_type <- eh[["EH10278"]]
 }
 
-# Via LazyData
-data(array_type)
-array_type
 }
 \keyword{datasets}

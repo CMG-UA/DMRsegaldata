@@ -56,13 +56,10 @@ Derived from the beta matrix and pheno data using limma differential methylation
 }
 \examples{
 \dontrun{
-# Via ExperimentHub
 library(ExperimentHub)
 eh <- ExperimentHub()
 dmps <- eh[["EH10277"]]
 
-# Via LazyData
-data(dmps)
 head(dmps)
 nrow(dmps)
 

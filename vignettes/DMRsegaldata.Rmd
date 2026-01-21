@@ -58,7 +58,9 @@ The `beta` object contains DNA methylation beta values for CpG sites across all 
 
 ```{r beta-data}
 # Load the beta values matrix
-data(beta)
+library(ExperimentHub)
+eh <- ExperimentHub()
+beta <- eh[["EH10275"]]
 
 # Examine the structure
 dim(beta)
@@ -79,8 +81,7 @@ The `pheno` object contains sample metadata including group assignment, age, and
 
 ```{r pheno-data}
 # Load phenotype data
-data(pheno)
-
+pheno <- eh[["EH10276"]]
 # View the structure
 str(pheno)
 head(pheno)
@@ -102,7 +103,7 @@ The `dmps` object contains pre-calculated differentially methylated positions id
 
 ```{r dmps-data}
 # Load DMP results
-data(dmps)
+dmps <- eh[["EH10277"]]
 
 # Examine the structure
 head(dmps)
@@ -127,7 +128,7 @@ The `array_type` object specifies the Illumina array platform used:
 
 ```{r array-type}
 # Load array type information
-data(array_type)
+array_type <- eh[["EH10278"]]
 array_type
 ```
 
