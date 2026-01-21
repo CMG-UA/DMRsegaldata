@@ -7,7 +7,6 @@ Methylation Array Type
 \description{
 A character string indicating the type of Illumina methylation array used for the data in this package.
 }
-\usage{data("array_type")}
 \format{
   A character string with value "450K", indicating the data was generated using the Illumina HumanMethylation450 BeadChip array.
 }
@@ -25,15 +24,8 @@ eh <- ExperimentHub()
 myfiles <- query(eh, "DMRsegaldata")
 array_type <- myfiles[["EH10278"]]
 
-# Or use helper function
-array_type <- ExperimentHub::loadResource(eh, "DMRsegaldata", "array_type.rda")
 }\if{html}{\out{</div>}}
 
-Alternatively, for local/development use:
-
-\if{html}{\out{<div class="sourceCode">}}\preformatted{
-data(array_type)
-}\if{html}{\out{</div>}}
 }
 \source{
 Example data for the DMRsegal package vignette and examples.

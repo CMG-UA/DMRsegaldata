@@ -7,7 +7,6 @@ Differentially Methylated Positions (DMPs)
 \description{
 A data frame containing differentially methylated positions (CpG sites) identified by comparing cancer and normal samples. The DMPs were identified using limma with adjusted p-value < 0.05.
 }
-\usage{data("dmps")}
 \format{
   A data frame with differentially methylated CpG sites as rows and the following columns:
   \describe{
@@ -45,11 +44,6 @@ dmps <- myfiles[["EH10277"]]
 
 }\if{html}{\out{</div>}}
 
-Alternatively, for local/development use:
-
-\if{html}{\out{<div class="sourceCode">}}\preformatted{
-data(dmps)
-}\if{html}{\out{</div>}}
 }
 \source{
 Derived from the beta matrix and pheno data using limma differential methylation analysis.

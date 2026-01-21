@@ -7,7 +7,6 @@ Phenotype Data for DNA Methylation Samples
 \description{
 A data frame containing phenotype information for 20 samples, including sample group (cancer vs. normal), age, and gender.
 }
-\usage{data("pheno")}
 \format{
   A data frame with 20 observations on the following 3 variables:
   \describe{
@@ -32,11 +31,6 @@ pheno <- myfiles[["EH10276"]]
 
 }\if{html}{\out{</div>}}
 
-Alternatively, for local/development use:
-
-\if{html}{\out{<div class="sourceCode">}}\preformatted{
-data(pheno)
-}\if{html}{\out{</div>}}
 }
 \source{
 Example data for the DMRsegal package vignette and examples.
