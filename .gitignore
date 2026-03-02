@@ -3,6 +3,5 @@ vignettes/DMRsegaldata_files
 /doc/
 /Meta/
 data
-..Rcheck
 DMRsegaldata*.tar.gz
 DMRsegaldata.Rcheck/*
