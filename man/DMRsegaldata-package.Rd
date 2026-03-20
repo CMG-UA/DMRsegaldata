@@ -14,7 +14,7 @@ This data package is designed to support the DMRsegal vignette and examples, pro
 \tabular{ll}{
 Package: \tab DMRsegaldata\cr
 Type: \tab Package\cr
-Version: \tab 0.99.1\cr
+Version: \tab 0.99.2\cr
 License: \tab GPL (>= 2)\cr
 LazyData: \tab yes\cr
 }

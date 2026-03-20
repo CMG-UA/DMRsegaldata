@@ -1,7 +1,7 @@
 Package: DMRsegaldata
 Type: Package
 Title: Example DNAm Data for DMRsegal
-Version: 0.99.1
+Version: 0.99.2
 Authors@R: c(
     person(given   = "Vasileios",
            family  = "Lemonidis",
@@ -28,7 +28,6 @@ Depends:
 LazyData: yes
 LazyDataCompression: xz
 Suggests:
-    DMRsegal,
     knitr,
     rmarkdown,
     BiocStyle,
