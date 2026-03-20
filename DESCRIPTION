@@ -1,7 +1,7 @@
 Package: DMRsegaldata
 Type: Package
 Title: Example DNAm Data for DMRsegal
-Version: 0.99.3
+Version: 0.99.4
 Authors@R: c(
     person(given   = "Vasileios",
            family  = "Lemonidis",

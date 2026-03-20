@@ -14,7 +14,7 @@ This data package is designed to support the DMRsegal vignette and examples, pro
 \tabular{ll}{
 Package: \tab DMRsegaldata\cr
 Type: \tab Package\cr
-Version: \tab 0.99.3\cr
+Version: \tab 0.99.4\cr
 License: \tab GPL (>= 2)\cr
 LazyData: \tab yes\cr
 }
@@ -114,7 +114,6 @@ beta <- eh[["EH10275"]]
 pheno <- eh[["EH10276"]]
 dmps <- eh[["EH10277"]]
 array_type <- eh[["EH10278"]]
-}
 
 ## Explore the data
 dim(beta)
@@ -150,6 +149,7 @@ if (nrow(dmps) > 0) {
             xlab = "Sample Group", ylab = "Beta Value",
             col = c("lightcoral", "lightblue"))
   }
+}
 }
 }
 \keyword{package}
