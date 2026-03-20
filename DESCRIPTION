@@ -1,7 +1,7 @@
 Package: DMRsegaldata
 Type: Package
 Title: Example DNAm Data for DMRsegal
-Version: 0.99.4
+Version: 0.99.5
 Authors@R: c(
     person(given   = "Vasileios",
            family  = "Lemonidis",
@@ -25,6 +25,7 @@ biocViews: ExperimentHub, ExperimentData, SNPData,
         SequencingData, MicroarrayData, Genome
 Depends:
     R (>= 4.5.0)
+    ExperimentHub
 LazyData: yes
 LazyDataCompression: xz
 Suggests:
